@@ -3,6 +3,7 @@ const connectDB = require('./config/db');
 const userRoutes = require('./routes/userRoutes');
 const errorMiddleware = require('./middleware/errorMiddleware');
 const logger = require('./utils/logger');
+require('dotenv').config(); // Load environment variables from .env file
 
 const app = express();
 
